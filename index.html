@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>ILeonnard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css" media="all">
+    <link rel="stylesheet" href="mediaquery.css">
+    
+
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <img src="images/Ileonnard.png" alt="ILeonnard">
+            <i id="menu" class="material-icons" alt="menu" onclick="clickMenu()">menu</i>
+            
+           <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="#s-about">//Sobre Mim</a></li>
+                <li><a href="#s-projects">//Projetos</a></li>
+                <li><a href="#s-knowlegde">//Conhecimentos</a></li>
+            </ul>
+            </nav>
+            
+        </nav>
+    </header> 
+
+    <main>
+        
+        <section class="background" id="s-home">
+            <div id="ileonnard">
+                <h1>ILEONNARD</h1>
+            </div>
+            <div id="subtitulo-principal">
+                <h3>SOFTWARE DEVELOPER, BACK-END</h3>
+            </div>
+        </section>
+
+
+        <section id="s-about">     
+            <div class="grid-layout">
+                <div class="container"> 
+                    <div id="creator-photo">
+                        <abbr title="ILeonnard"><img src="images/creator.jpg" alt="Creator-photo"></abbr>
+                    </div>
+                    <div id="content">    
+                        <h3>Sobre Mim</h3>
+                        <h2>Igor Leonardo</h2>
+                        <h4>Software Developer, Back-End</h4>
+
+                        <p>
+                            Meu nome é Igor Leonardo, ou "Leonnard", sou um dev focado ao desenvolvimento back-end. Sou fascinado em transformar ideias em realidade combinando habilidade técnicas e criatividade. Estou sempre em busca de novas oportunidades para aperfeiçoar minhas habilidades e trabalhar em projetos que me desafiam.
+                        </p>
+
+                        
+
+                        <div class="icons-redesocial" >
+                                <a href="https://github.com/ILeonnard?tab=repositories" target="_blank"><abbr title="GitHub"><img src="images/github-icon.png" alt="GitHub"></abbr></a>
+                    
+                                <a href="https://www.linkedin.com/in/igor-leonardo-78074a263/" target="_blank"><abbr title="Linkedin"><img src="images/linkedin-icon.png" alt="Linkedin"></abbr></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="s-projects">
+            <h2>Projetos</h2>
+            
+            <div id="layout-projects">
+                <div id="project01">
+                    <a href="#">1</a>
+                </div>
+                <div id="project02">
+                    <a href="#">2</a>
+                </div>
+                <div id="project03">
+                    <a href="#">3</a>
+                </div>
+            </div>
+           
+            <div id="repositorio">
+            <a href="https://github.com/ILeonnard?tab=repositories" target="_blank">Repositórios no GitHub</a>
+            </div>
+        </section>
+
+
+        <section id="s-knowlegde">
+            <h2>Conhecimentos</h2>
+
+            <div id="layout-knowlegde">
+                <div id="HTML">
+                    <a href="#"><abbr title="HTML5"><img src="images/html5-icon.png" alt="HTML"></abbr></a>
+                </div>
+                <div id="CSS">
+                    <a href="#"><abbr title="CSS3"><img src="images/css3-icon.png" alt="CSS3"></abbr></a>
+                </div>
+                <div id="Java">
+                    <a href="#"><abbr title="Java"><img src="images/java-icon.png" alt="Java"></abbr></a>
+        </section>
+
+        <br>
+    </main>
+
+    <footer>
+        <p>Criado por <span>ILEONNARD</span>.</p>
+    </footer>
+
+    <script>
+        
+        const menu = document.querySelector(".material-icons")
+        const navi = document.querySelector(".nav-list")
+
+
+          function clickMenu(){
+            if (navi.style.display =='flex') {
+                navi.style.display ='none'
+            } else {
+                navi.style.display ='flex'
+            }
+        }  
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1063 @@
+@charset "UTF-8";
+
+/*
+Pequenas telas: ate 600px
+Celular de 600px ate 768px
+Tablet 768 ate 992
+Desktop 992 ate 1200px
+grandes telas 1200px
+
+
+*/
+
+:root {
+    --cor0: white;
+    --cor1: #111111;
+    --cor2: #151515;
+    --cor3: #A64812;
+    --cor4: #c74f0a;
+    --cor5: black;
+
+    --fonte-padrao: 'Roboto Mono', monospace;
+    --fonte-destaque: 'Oswald', sans-serif;
+}
+
+
+
+@media screen and (max-width: 600px){
+    
+    header {
+        width: 100%;
+        height: 109px;
+        padding: 30px 0px;
+    }
+    
+    i#menu {
+        display: block;
+    }
+    
+    i#menu{
+        font-size: 45px;
+        color: #A64812;
+        padding-left: 80px;
+        z-index: 2;
+        top: 0;
+        cursor: pointer;
+    }
+
+    i#menu:hover{
+        color: var(--cor0);
+    }
+   
+    .navbar {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: -80px;
+        transition: ease .2s;
+        top: 0;
+        left: 80px;
+        padding: 0%;
+        cursor: pointer;
+        
+    }
+
+    
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(90deg, #111111,  #a6481273, #111111);
+        
+        justify-content: center;
+        
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        margin: 0;   
+        cursor: pointer;
+    }
+
+    .nav-list li {
+        margin: 40px 50px;
+    }
+
+    .nav-list li a{
+        font-size: 20px;
+        color: var(--cor0);
+        width: 100%;
+        padding: 20px;
+        
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+   
+
+    nav {
+        padding: 30px 10px 30px 10px;
+        display: flex;
+    }
+    
+    nav > img{
+        width: 150px;
+        height: 35.34px;
+        padding-right: 50px;
+        
+        
+        
+    }
+    
+    
+    
+
+
+
+
+
+
+    body {
+        background-color: #111111;
+        font-family: var(--fonte-padrao);
+    }
+    
+    .background {
+        background-image: none;
+        width: 430px;
+    }
+    
+    #s-home {
+        height: 500px;
+        width: 100%;
+        padding: 10px 0px;
+        color: var(--cor0);
+    }
+    
+    div#ileonnard{
+    
+        background-size: 100% 100%;
+        position: absolute;
+        height: 110px;
+        width: 100%;
+    
+        left: 50%;
+        top: 45%;
+    
+        transform: translate(-50%, -50%);
+    
+    }
+    
+    #ileonnard h1{
+        font-size: 3.75rem;
+        top: 50px;
+        left: 50%;
+     
+    }
+    
+    #subtitulo-principal h3{
+        font-size: 0.90rem;
+        left: 50%;
+        top: 36.7%;
+        text-align: center;
+    }
+    
+    #s-about {
+        height: 870px;
+        width: 100%;
+    }
+    
+    .grid-layout {
+        height: 800px;
+        width: 100%;
+    }
+    
+    
+    .container {
+        height: 900px;
+        width: 90%;
+
+        position: relative;
+        display: inline;
+    }
+    
+    .container img {
+        width: 90%;
+        height: 100%;
+    }
+    
+    
+    #content h3 {
+        padding: 10px 3px;
+    }
+    
+    #content h2 {
+        font-size: 2.5rem ;
+    }
+    
+    #content h4 {
+        padding: 0px 3px 10px 3px;
+        font-size: 0.938rem;
+    }
+    #content p {
+       font-size: 0.915rem;
+    }
+    
+    .icons-redesocial {
+        padding: 10px;
+        
+    }
+    
+    .icons-redesocial img{
+        height: 50px;
+        width: 50px;
+    }
+    
+    #s-projects {
+        width: 100%;
+    }
+
+
+    #s-projects h2 {
+        font-size: 3.75rem;
+        padding: 50px;
+    }
+    
+    
+    
+    #layout-projects {
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        text-align: center;
+        width: 100%;
+    
+        padding: 0px 0px 50px 0px;
+        
+    }
+    
+    #layout-projects div {
+        
+        height: 120px;
+        width: 170px;
+        padding: 30px;
+        margin: 60px 50px 5px 50px;
+        flex: none;
+    
+        transition: .3s all ease;
+    
+    }
+
+    #repositorio a {
+        font-size: 1.063rem;
+        padding: 0px 50px 90px 50px;
+        
+    
+    }
+    
+    
+    
+    #s-knowlegde h2 {
+        font-size: 3rem;   
+    }
+    
+    #layout-knowlegde div {
+        
+        height: 70px;
+        width: 70px;
+
+    }
+    
+    
+    #layout-knowlegde img {
+        height: 70px;
+        width: 70px;
+    }
+    
+    
+    footer {
+        padding: 20px 0px;
+        width: 100%;
+    }
+    
+    footer p {
+        font-size: 0.938rem;
+    }
+    
+
+
+}
+
+
+
+
+
+
+@media screen and (min-width: 600px) and (max-width: 767px){
+    header {
+        width: 100%;
+        height: 109px;
+        padding: 30px 0px;
+    }
+    
+    i#menu {
+        display: block;
+    }
+    
+    
+    i#menu{
+        font-size: 45px;
+        color: #A64812;
+        padding-left: 80px;
+        z-index: 2;
+        top: 0;
+        cursor: pointer;
+    }
+
+    i#menu:hover{
+        color: var(--cor0);
+    }
+   
+    .navbar {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: -80px;
+        transition: ease .2s;
+        top: 0;
+        left: 80px;
+        padding: 0%;
+        cursor: pointer;
+        
+    }
+
+    
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(90deg, #111111,  #a6481273, #111111);
+        
+        justify-content: center;
+        
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        margin: 0;   
+        cursor: pointer;
+    }
+
+    .nav-list li {
+        margin: 40px 50px;
+    }
+
+    .nav-list li a{
+        font-size: 20px;
+        color: var(--cor0);
+        width: 100%;
+        padding: 20px;
+        
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    
+    nav > img{
+        width: 250px;
+        height: 50px;
+        padding-right: 50px;
+        
+    }
+    
+    
+    body {
+        background-color: #111111;
+        font-family: var(--fonte-padrao);
+    }
+    
+    .background {
+        background-image: none;
+        width: 100%;
+    }
+    
+    #s-home {
+        height: 500px;
+        width: 100%;
+        padding: 10px 0px;
+        color: var(--cor0);
+    }
+    
+    div#ileonnard{
+    
+        background-size: 100% 100%;
+        position: absolute;
+        height: 110px;
+        width: 100%;
+    
+        left: 50%;
+        top: 45%;
+    
+        transform: translate(-50%, -50%);
+    
+    }
+    
+    #ileonnard h1{
+        font-size: 6.75rem;
+        top: 40%;
+        left: 50%;
+     
+    }
+    
+    #subtitulo-principal h3{
+        font-size: 1rem;
+        left: 50%;
+        top: 45%;
+    
+    }
+    
+    #s-about {
+        height: 900px;
+        width: 100%;
+    }
+    
+    .grid-layout {
+        height: 850px;
+        width: 100%;
+    }
+    
+    
+    .container {
+        height: 900px;
+        width: 90%;
+        position: relative;
+        display: inline;    
+    }
+    
+    .container img {
+        width: 60%;
+        height: 70%;
+    }
+
+   
+    
+    
+    #content h3 {
+        padding: 10px 3px;
+    }
+    
+    #content h2 {
+        font-size: 2.5rem ;
+    }
+    
+    #content h4 {
+        padding: 0px 3px 10px 3px;
+        font-size: 0.938rem;
+    }
+    #content p {
+       font-size: 0.915rem;
+    }
+    
+    .icons-redesocial {
+        padding: 10px;
+        
+    }
+    
+    .icons-redesocial img{
+        height: 50px;
+        width: 50px;
+    }
+    
+    #s-projects {
+        width: 100%;
+    }
+
+
+    #s-projects h2 {
+        font-size: 3.75rem;
+        padding: 50px;
+    }
+    
+    
+    
+    #layout-projects {
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        text-align: center;
+        width: 100%;
+    
+        padding: 0px 0px 50px 0px;
+        
+    }
+    
+    #layout-projects div {
+        
+        height: 120px;
+        width: 170px;
+        padding: 30px;
+        margin: 60px 50px 5px 50px;
+        flex: none;
+    
+        transition: .3s all ease;
+    
+    }
+
+    #repositorio a {
+        font-size: 1.063rem;
+        padding: 0px 50px 90px 50px;
+        
+    
+    }
+    
+    
+    
+    #s-knowlegde h2 {
+        font-size: 3rem;   
+    }
+    
+    #layout-knowlegde div {
+        
+        height: 70px;
+        width: 70px;
+
+    }
+    
+    
+    #layout-knowlegde img {
+        height: 70px;
+        width: 70px;
+    }
+    
+    
+    footer {
+        padding: 20px 0px;
+        width: 100%;
+    }
+    
+    footer p {
+        font-size: 0.938rem;
+    }
+    
+
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    header {
+        width: 100%;
+        height: 109px;
+        padding: 30px 0px;
+    }
+    
+
+    i#menu {
+        display: block;
+    }
+
+    i#menu{
+        font-size: 45px;
+        color: #A64812;
+        padding-left: 80px;
+        z-index: 2;
+        top: 0;
+        cursor: pointer;
+    }
+
+    i#menu:hover{
+        color: var(--cor0);
+    }
+   
+    .navbar {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: -80px;
+        transition: ease .2s;
+        top: 0;
+        left: 80px;
+        padding: 0%;
+        cursor: pointer;
+        
+    }
+
+    
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(90deg, #111111,  #a6481273, #111111);
+        
+        justify-content: center;
+        
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        margin: 0;   
+        cursor: pointer;
+    }
+
+    .nav-list li {
+        margin: 40px 50px;
+    }
+
+    .nav-list li a{
+        font-size: 20px;
+        color: var(--cor0);
+        width: 100%;
+        padding: 20px;
+        
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    
+    
+    nav > img{
+        width: 250px;
+        height: 50px;
+        padding-right: 50px;
+        
+    }
+    
+    
+    body {
+        background-color: #111111;
+        font-family: var(--fonte-padrao);
+    }
+    
+    .background {
+        width: 100%;
+    }
+    
+    #s-home {
+        height: 500px;
+        width: 100%;
+        padding: 10px 0px;
+        color: var(--cor0);
+    }
+    
+    div#ileonnard{
+    
+        background-size: 100% 100%;
+        position: absolute;
+        height: 110px;
+        width: 100%;
+    
+        left: 50%;
+        top: 45%;
+    
+        transform: translate(-50%, -50%);
+    
+    }
+    
+    #ileonnard h1{
+        font-size: 6.75rem;
+        top: -70%;
+        left: 50%;
+     
+    }
+    
+    #subtitulo-principal h3{
+        font-size: 1rem;
+        left: 50%;
+        top: 35%;
+    
+    }
+    
+    #s-about {
+        height: 1000px;
+        width: 100%;
+    }
+    
+    .grid-layout {
+        height: 700px;
+        width: 100%;
+    }
+    
+    
+    .container {
+        height: 1100px;
+        width: 80%;
+
+        position: relative;
+        display: inline;
+    }
+    
+    .container img {
+        width: 90%;
+        height: 100%;
+    }
+    
+    
+    #content h3 {
+        padding: 10px 3px;
+    }
+    
+    #content h2 {
+        font-size: 2.5rem ;
+    }
+    
+    #content h4 {
+        padding: 0px 3px 10px 3px;
+        font-size: 0.938rem;
+    }
+    #content p {
+       font-size: 0.915rem;
+    }
+    
+    .icons-redesocial {
+        padding: 10px;
+        
+    }
+    
+    .icons-redesocial img{
+        height: 50px;
+        width: 50px;
+    }
+    
+    #s-projects {
+        width: 100%;
+    }
+
+
+    #s-projects h2 {
+        font-size: 3.75rem;
+        padding: 50px;
+    }
+    
+    
+    
+    #layout-projects {
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        text-align: center;
+        width: 100%;
+    
+        padding: 0px 0px 50px 0px;
+        
+    }
+    
+    #layout-projects div {
+        
+        height: 120px;
+        width: 170px;
+        padding: 30px;
+        margin: 60px 50px 5px 50px;
+        flex: none;
+    
+        transition: .3s all ease;
+    
+    }
+
+    #repositorio a {
+        font-size: 1.063rem;
+        padding: 0px 50px 90px 50px;
+        
+    
+    }
+    
+    
+    
+    #s-knowlegde h2 {
+        font-size: 3rem;   
+    }
+    
+    #layout-knowlegde div {
+        
+        height: 70px;
+        width: 70px;
+
+    }
+    
+    
+    #layout-knowlegde img {
+        height: 70px;
+        width: 70px;
+    }
+    
+    
+    footer {
+        padding: 20px 0px;
+        width: 100%;
+    }
+    
+    footer p {
+        font-size: 0.938rem;
+    }
+    
+
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    header {
+        width: 100%;
+        height: 109px;
+        padding: 30px 0px;
+    }
+    
+    i#menu {
+        display: block;
+    }
+
+    i#menu{
+        font-size: 45px;
+        color: #A64812;
+        padding-left: 80px;
+        z-index: 2;
+        top: 0;
+        cursor: pointer;
+    }
+
+    i#menu:hover{
+        color: var(--cor0);
+    }
+
+    
+   
+    .navbar {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: -80px;
+        transition: ease .2s;
+        top: 0;
+        left: 80px;
+        padding: 0%;
+        cursor: pointer;
+        
+    }
+
+    
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(90deg, #111111,  #a6481273, #111111);
+        
+        justify-content: center;
+        
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        margin: 0;   
+        cursor: pointer;
+    }
+
+    .nav-list li {
+        margin: 40px 50px;
+    }
+
+    .nav-list li a{
+        font-size: 20px;
+        color: var(--cor0);
+        width: 100%;
+        padding: 20px;
+        
+    }
+
+    
+    
+    nav > img{
+        width: 250px;
+        height: 50px;
+        padding-right: 100px;
+        padding-left: 50px;
+        
+    }
+    
+    
+    
+    body {
+        background-color: #111111;
+        font-family: var(--fonte-padrao);
+    }
+    
+    .background {
+        width: 100%;
+    }
+    
+    #s-home {
+        height: 500px;
+        width: 100%;
+        padding: 10px 0px;
+        color: var(--cor0);
+    }
+    
+    div#ileonnard{
+    
+        background-size: 100% 100%;
+        position: absolute;
+        height: 110px;
+        width: 100%;
+    
+        left: 50%;
+        top: 38%;
+    
+        transform: translate(-50%, -50%);
+    
+    }
+    
+    #ileonnard h1{
+        font-size: 6.75rem;
+        top: -70%;
+        left: 50%;
+     
+    }
+    
+    #subtitulo-principal h3{
+        font-size: 1rem;
+        left: 50%;
+        top: 30%;
+    
+    }
+    
+    #s-about {
+        height: 1200px;
+        width: 100%;
+    }
+    
+    .grid-layout {
+        height: 700px;
+        width: 100%;
+    }
+    
+    
+    .container {
+        height: 1300px;
+        width: 80%;
+
+        position: relative;
+        display: inline;
+    }
+    
+    .container img {
+        width: 90%;
+        height: 100%;
+    }
+    
+    
+    #content h3 {
+        padding: 10px 3px;
+    }
+    
+    #content h2 {
+        font-size: 2.5rem ;
+    }
+    
+    #content h4 {
+        padding: 0px 3px 10px 3px;
+        font-size: 0.938rem;
+    }
+    #content p {
+       font-size: 0.915rem;
+    }
+    
+    .icons-redesocial {
+        padding: 10px;
+        
+    }
+    
+    .icons-redesocial img{
+        height: 50px;
+        width: 50px;
+    }
+    
+    #s-projects {
+        width: 100%;
+    }
+
+
+    #s-projects h2 {
+        font-size: 3.75rem;
+        padding: 50px;
+    }
+    
+    
+    
+    #layout-projects {
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        text-align: center;
+        width: 100%;
+    
+        padding: 0px 0px 50px 0px;
+        
+    }
+    
+    #layout-projects div {
+        
+        height: 120px;
+        width: 170px;
+        padding: 30px;
+        margin: 60px 50px 5px 50px;
+        flex: none;
+    
+        transition: .3s all ease;
+    
+    }
+
+    #repositorio a {
+        font-size: 1.063rem;
+        padding: 0px 50px 90px 50px;
+        
+    
+    }
+    
+    
+    
+    #s-knowlegde h2 {
+        font-size: 3rem;   
+    }
+    
+    #layout-knowlegde div {
+        
+        height: 70px;
+        width: 70px;
+
+    }
+    
+    
+    #layout-knowlegde img {
+        height: 70px;
+        width: 70px;
+    }
+    
+    
+    footer {
+        padding: 20px 0px;
+        width: 100%;
+    }
+    
+    footer p {
+        font-size: 0.938rem;
+    }
+    
+    @media screen and (min-width: 1201px){
+        
+        
+
+    }
+
+}
